@@ -1,0 +1,813 @@
+// 色設定
+$base-color:#563636;
+$main-color:#ffffcc;
+$accent-color:#9a3939;
+
+
+// 共通部分ここから
+// ----------------------------------------------------------------------------
+body {
+  background-image: url(../images/bg-img1.jpg);
+  font-size: 14px;
+  font-family: 'Oleo Script', cursive, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+a {
+  color: $accent-color;
+}
+
+.back-top {
+  background-color: $base-color;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  display: none;
+  box-shadow: 2px 2px 5px #000;
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+
+}
+
+
+// リスト枠ベース
+.items {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  ;
+
+  div {
+    background-color: rgba(86, 54, 54, 1);
+    width: 250px;
+    height: 350px;
+    float: left;
+    border: 10px solid rgba(86, 54, 54, 1);
+    margin: 20px 0 20px 40px;
+    position: relative;
+  }
+
+  h4 {
+    color: $main-color;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 20px;
+  }
+
+  p {
+    color: $main-color;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// 共通部分ここまで
+
+
+
+// ヘッダーここから
+// ----------------------------------------------------------------------------
+header {
+  background-image: url(../images/bg-img2.jpg);
+
+  .inner {
+    width: 1200px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  h1 {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+  }
+
+  nav {
+
+    ul {
+      position: absolute;
+      top: 40px;
+      left: 210px;
+    }
+
+    li {
+      width: 190px;
+      height: 70px;
+      float: left;
+      border-left: 1px solid $main-color;
+      text-align: center;
+      line-height: 70px;
+
+      &:last-child {
+        border-right: 1px solid $main-color;
+      }
+
+    }
+
+    a {
+      color: $main-color;
+      font-size: 24px;
+      text-decoration: none;
+    }
+
+  }
+
+}
+
+// ----------------------------------------------------------------------------
+// ヘッダーここまで
+
+
+
+// フッターここから
+// ----------------------------------------------------------------------------
+
+footer {
+  clear: both;
+  background-image: url(../images/bg-img2.jpg);
+
+
+  .inner {
+    width: 1200px;
+    height: 370px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    width: 770px;
+    height: 20px;
+    position: absolute;
+    top: 60px;
+    left: 220px;
+  }
+
+  li {
+    float: left;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    color: $main-color;
+    line-height: 20px;
+  }
+
+  .ad {
+    width: 460px;
+    height: 40px;
+    position: absolute;
+    bottom: 140px;
+    right: 240px;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  }
+
+  address {
+    color: $main-color;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .copy {
+    width: 230px;
+    height: 20px;
+    position: absolute;
+    bottom: 50px;
+    right: 355px;
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  }
+
+  p {
+    color: $main-color;
+  }
+
+  img {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    bottom: 120px;
+    left: 250px;
+  }
+
+  .fb {
+    background-color: $main-color;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 50px;
+    left: 250px;
+
+    i {
+      color: $base-color;
+      font-size: 36px;
+      line-height: 50px;
+    }
+
+  }
+
+  .is {
+    background-color: $main-color;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 50px;
+    left: 330px;
+
+
+    i {
+      color: $base-color;
+      font-size: 36px;
+      line-height: 50px;
+    }
+
+  }
+
+}
+
+// ----------------------------------------------------------------------------
+// フッターここまで
+
+
+// ホームのメイン部分ここから
+// ----------------------------------------------------------------------------
+body#home {
+
+  .main-img {
+    position: relative;
+
+    .bx-wrapper {
+      box-shadow: none;
+      border: none;
+      left: 0;
+      background-color: transparent;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+      height: 650px;
+      object-fit: cover;
+    }
+  }
+
+  .concept {
+    background-color: rgba(86, 54, 54, .3);
+    width: 550px;
+    height: 220px;
+    position: absolute;
+    border-radius: 10px;
+    left: 40px;
+    top: 450px;
+    text-shadow: 1px .7px .3px #000;
+
+    p {
+      margin-left: 20px;
+      color: $main-color;
+      font-size: 18px;
+      line-height: 42px;
+    }
+
+  }
+
+  .info {
+    overflow: hidden;
+    margin-bottom: 100px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    img {
+      width: 40px;
+      position: absolute;
+      left: 330px;
+      top: 60px;
+    }
+
+
+    h2 {
+      color: $base-color;
+      font-size: 42px;
+      float: left;
+      margin-top: 60px;
+      margin-left: 450px;
+      margin-right: 50px;
+      margin-bottom: 60px;
+    }
+
+    p {
+      color: $base-color;
+      font-size: 20px;
+      margin-top: 70px;
+    }
+
+    ul {
+      clear: both;
+      margin-left: 40px;
+      list-style-type: none;
+
+    }
+
+    li {
+      margin-bottom: 30px;
+    }
+
+    time {
+      color: $base-color;
+      font-size: 18px;
+      margin-right: 40px;
+    }
+
+    a {
+      color: $base-color;
+      font-size: 18px;
+    }
+
+  }
+
+  section.new-item {
+    overflow: hidden;
+    margin-bottom: 80px;
+
+    #sub-title1 {
+      background-color: rgba(86, 54, 54, .8);
+      margin-bottom: 20px;
+
+      .inner {
+        width: 1200px;
+        height: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+
+        h3 {
+          color: $main-color;
+          font-size: 42px;
+          margin-top: 70px;
+          margin-left: 290px;
+          margin-bottom: 50px;
+        }
+
+        p {
+          color: $main-color;
+          font-size: 20px;
+          margin-left: 350px;
+        }
+
+        img {
+          position: absolute;
+          top: 10px;
+          right: 200px;
+        }
+
+
+      }
+
+    }
+
+  }
+
+
+  section.rec-item {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 80px;
+
+
+    #sub-title2 {
+      background-color: rgba(86, 54, 54, .8);
+      margin-bottom: 20px;
+
+
+      .inner {
+        width: 1200px;
+        height: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+
+        h3 {
+          color: $main-color;
+          font-size: 42px;
+          margin-top: 70px;
+          margin-left: 230px;
+          margin-bottom: 50px;
+        }
+
+        p {
+          color: $main-color;
+          font-size: 20px;
+          margin-left: 350px;
+        }
+
+        img {
+          position: absolute;
+          top: 10px;
+          right: 200px;
+        }
+
+
+      }
+
+    }
+
+  }
+
+}
+
+// ----------------------------------------------------------------------------
+// ホームのメイン部分ここまで
+
+
+
+//アイテムリストのメイン部分ここから
+// ----------------------------------------------------------------------------
+body#item-list {
+
+  // ページタイトル部分ここから
+  .main-img {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .item-list {
+    overflow: hidden;
+    margin-bottom: 100px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+
+    h2 {
+      color: $base-color;
+      font-size: 42px;
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: $base-color;
+      font-size: 20px;
+      margin-top: 70px;
+      margin-bottom: 40px;
+    }
+
+  }
+
+  .b-item {
+    position: absolute;
+    top: 60px;
+    right: 350px;
+  }
+
+
+  // リストのカテゴリータイトル
+  .list-title {
+    .inner {
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      overflow: hidden;
+
+      h3 {
+        color: $base-color;
+        font-size: 36px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      img {
+        position: absolute;
+        top: 55px;
+        left: 335px;
+      }
+
+    }
+
+  }
+
+  // セクションごとのマージンボトム
+  section {
+    overflow: hidden;
+    margin-bottom: 80px;
+  }
+
+}
+
+// ----------------------------------------------------------------------------
+// アイテムリストのメイン部分ここまで
+
+
+
+//アバウトのメイン部分ここから
+// ----------------------------------------------------------------------------
+body#about {
+
+  // ページタイトル部分ここから
+  .main-img {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .about-title {
+    margin-bottom: 100px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+
+    h2 {
+      color: $base-color;
+      font-size: 42px;
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: $base-color;
+      font-size: 20px;
+      margin-top: 70px;
+      margin-bottom: 40px;
+    }
+
+    .b-about {
+      position: absolute;
+      top: 0px;
+      right: 350px;
+    }
+
+  }
+
+  section {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .map1 {
+      width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+
+      img {
+        margin-bottom: 60px;
+      }
+
+      p {
+        font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 100px;
+      }
+    }
+
+    div.concept {
+      width: 800px;
+      font-size: 24px;
+      line-height: 42px;
+      font-weight: bold;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    h5 {
+      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+      font-size: 24px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    address {
+      font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+      font-size: 18px;
+      line-height: 36px;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    #ab {
+      font-size: 18px;
+      line-height: 36px;
+      text-align: center;
+    }
+
+  }
+
+  .g-maps {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    div {
+      background-color: $base-color;
+      color: $main-color;
+      font-size: 20px;
+      height: 80px;
+      line-height: 80px;
+      position: relative;
+      margin-bottom: 100px;
+
+      address {
+        margin-left: 40px;
+      }
+
+      img {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+      }
+
+    }
+  }
+
+  iframe {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+  }
+
+
+  iframe:hover {
+    transition: filter 0.8s ease;
+    -webkit-filter: grayscale(0) saturate(2);
+    filter: grayscale(0) saturate(2);
+  }
+
+
+
+  // セクションごとのマージンボトム
+  section {
+    overflow: hidden;
+    margin-bottom: 100px;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// アバウトのメイン部分ここまで
+
+
+
+
+//ガイドのメイン部分ここから
+// ----------------------------------------------------------------------------
+body#guide {
+
+  // ページタイトル部分ここから
+  .main-img {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .guide-title {
+    margin-bottom: 100px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+
+    h2 {
+      color: $base-color;
+      font-size: 42px;
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: $base-color;
+      font-size: 20px;
+      margin-top: 70px;
+      margin-bottom: 40px;
+    }
+
+    .b-guide {
+      position: absolute;
+      top: 0px;
+      right: 350px;
+    }
+
+  }
+
+  section {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+
+
+  // セクションごとのマージンボトム
+  section {
+    overflow: hidden;
+    margin-bottom: 100px;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// ガイドのメイン部分ここまで
+
+
+
+//コンタクトのメイン部分ここから
+// ----------------------------------------------------------------------------
+body#contact {
+
+  // ページタイトル部分ここから
+  .main-img {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .contact-title {
+    margin-bottom: 100px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+
+    h2 {
+      color: $base-color;
+      font-size: 42px;
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+
+    p {
+      color: $base-color;
+      font-size: 20px;
+      margin-top: 70px;
+      margin-bottom: 40px;
+    }
+
+    .b-contact {
+      position: absolute;
+      top: 0px;
+      right: 350px;
+    }
+
+  }
+
+  section {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  // セクションごとのマージンボトム
+  section {
+    overflow: hidden;
+    margin-bottom: 100px;
+  }
+
+
+}
+
+
+
+
+// ----------------------------------------------------------------------------
+// コンタクトのメイン部分ここまで
